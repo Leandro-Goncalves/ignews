@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="width=100%; background-color: #12121">
   <img src="files/img/logo.svg" height="100" width="175" alt="ig.news" />
 </p>
 
