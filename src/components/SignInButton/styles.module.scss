@@ -30,4 +30,25 @@
   &:hover {
     filter: brightness(0.8);
   }
+
+  @media (max-width: 720px) {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+
+    svg:first-child {
+      opacity: 0;
+      position: fixed;
+      pointer-events: none;
+    }
+
+    svg.closeIcon {
+      opacity: 0;
+      position: fixed;
+      pointer-events: none;
+    }
+
+    &:active {
+      filter: drop-shadow(0 0 5px white);
+    }
+  }
 }

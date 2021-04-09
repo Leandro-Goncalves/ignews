@@ -55,4 +55,22 @@
   button {
     margin-left: auto;
   }
+
+  @media (max-width: 720px) {
+    padding: 0 0.5rem;
+    img {
+      width: 50px;
+    }
+    nav {
+      margin-left: 0;
+      a {
+        font-size: 0.75rem;
+
+        & + a {
+          margin-left: 1rem;
+        }
+      }
+      margin-left: 1rem;
+    }
+  }
 }

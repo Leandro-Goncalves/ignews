@@ -8,6 +8,14 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+
+  @media (max-width: 720px) {
+    img {
+      position: fixed;
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
 }
 
 .hero {
