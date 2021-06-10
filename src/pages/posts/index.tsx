@@ -59,10 +59,9 @@ export default function Posts({ posts }: PostsProps) {
         <div className={styles.posts}>
           {posts.map(post => (
             // @ts-ignore
-            <Link href={session?.activeSubscription ? `/posts/${post.slug}` : `/posts/preview/${post.slug}`}>
+            <Link key={post} href={session?.activeSubscription ? `/posts/${post.slug}` : `/posts/preview/${post.slug}`}>
               <motion.a
                 variants={fadeUp}
-                key={post.slug}
               >
                 <time>{post.updatedAt}</time>
                 <strong>{post.title}</strong>

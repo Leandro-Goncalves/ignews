@@ -10,7 +10,7 @@ import styles from './home.module.scss';
 interface HomeProps {
   product: {
     productId: string;
-    amount: number;
+    amount: string;
   }
 }
 
@@ -65,7 +65,7 @@ export default function Home({product}:HomeProps) {
           <motion.div
             variants={fadeUp}
           >
-            <SubscribeButton priceId={product.productId}/>
+            <SubscribeButton />
           </motion.div>
         </motion.section>
 
