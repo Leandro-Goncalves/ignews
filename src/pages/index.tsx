@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import React from 'react';
 import { SubscribeButton } from '../components/SubscribeButton';

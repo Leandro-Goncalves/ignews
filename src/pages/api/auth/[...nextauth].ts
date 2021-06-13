@@ -10,9 +10,13 @@ export default NextAuth({
     Providers.GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      scope: 'read:user'
     }),
   ],
+  debug: true,
+  secret: process.env.AUTH_SECRETS,
+  jwt: {
+    secret: process.env.JWT_SECRET,
+  },
   callbacks:{
     async session(session, token) {
      try {

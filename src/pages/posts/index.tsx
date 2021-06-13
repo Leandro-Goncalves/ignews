@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { getPrismicClient } from '../../service/prismic';
 import styles from './styles.module.scss';

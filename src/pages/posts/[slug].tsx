@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticPaths } from "next";
 import { getSession } from "next-auth/client";
 import Head from "next/head";
 import { RichText } from "prismic-dom";
